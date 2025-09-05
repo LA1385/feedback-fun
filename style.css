@@ -33,7 +33,7 @@ header button{
 /*main*/
 main{
     margin: 10%;
-    padding: 40px;
+    padding: 5%;
     background-color: green;
     border-radius: 12px;
     color: white;
@@ -55,4 +55,150 @@ main{
 }
 #content{
     font-size: 1.5rem;
+}
+#content h4{
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px yellow;
+    color: rgb(12, 168, 12)
+}
+
+/* Feature-highlight*/
+#Feature-highlight{
+    margin-top: 5%;
+    background-color: gold;
+    padding: 30px;
+    border-radius: 12px;
+}
+#Feature-highlight h4{
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px gray;
+    color: green;
+}
+.highlights{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highlights #responsive{
+    height: 120px;
+    width: 120px;
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px;
+}
+.highlights #interactive {
+    height: 120px;
+    width: 120px;
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px;
+}
+.highlights #lightweight {
+    height: 120px;
+    width: 120px;
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px;
+}
+.highlights #fun {
+    height: 120px;
+    width: 120px;
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px;
+}
+.highlights h6{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 1px gray;
+}
+
+/*ROCK PAPER SCISSORS SECTION*/
+#R-P-S{
+    margin-top: 5%;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 12px;
+}
+#R-P-S h3{
+    font-size: 2rem;
+    text-align: center;
+    color: yellow;
+    text-shadow: 2px 2px 1px green;
+}
+#R-P-S #heading{
+    color: green;
+    text-shadow: 2px 2px 1px yellow;
+}
+#R-P-S p{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}
+#R-P-S .moves{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#R-P-S button{
+    height: 80px;
+    width: 80px;
+    padding: 15px;
+    font-size: 40px;
+    margin-left: 20px;
+    border-radius: 12px;
+}
+
+#R-P-S button:nth-child(1){
+    background-color: red;
+}
+#R-P-S button:nth-child(2){
+    background-color: green;
+}
+#R-P-S button:nth-child(3){
+    background-color:blue;
+}
+#R-P-S button:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+#R-P-S #outcome{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: yellow;
+    text-align: center;
+    font-weight: bolder;
+}
+#user-score{
+    color: yellow;
+}
+#computer-score{
+    color: yellow;
+}
+
+/* testimonials */
+#testimonials{
+    margin-top: 5%;
+    background-color: rgb(230, 222, 222);
+    border-radius: 12px;
+    padding: 30px;
+    color: black;
+}
+#profile{
+    background-color: blue;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 80px;
+    text-indent: center;
+    margin-top: ;
 }

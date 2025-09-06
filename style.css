@@ -67,7 +67,7 @@ main{
 #Feature-highlight{
     margin-top: 5%;
     background-color: gold;
-    padding: 30px;
+    padding: 25px;
     border-radius: 12px;
 }
 #Feature-highlight h4{
@@ -112,9 +112,9 @@ main{
     padding: 10px;
 }
 .highlights h6{
-    margin-top: 10px;
-    margin-bottom: 25px;
-    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
     font-weight: bold;
     color: black;
     text-shadow: 2px 2px 1px gray;
@@ -193,12 +193,336 @@ main{
     border-radius: 12px;
     padding: 30px;
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #profile{
-    background-color: blue;
-    padding: 20px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
-    font-size: 80px;
-    text-indent: center;
-    margin-top: ;
+    font-size: 60px;
+    text-align: center;
+}
+#profile img{
+    height: 100px;
+    width: 100px;
+    border-radius:50% ;
+}
+#name{
+    font-weight: bold;
+    text-align: right;
+}
+
+/*Footer section*/
+hr{
+    width: 90%;
+    background-color: yellow;
+}
+
+footer{
+    padding: 5%;
+    color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px 1px green;
+}
+@media screen and (max-width:1023px) and (min-width:768px){
+    /*main*/
+        main {
+            margin: 5%;
+            padding: 5%;
+            background-color: green;
+            border-radius: 12px;
+            color: white;
+
+    /*About section*/
+       
+        #user {
+            font-size: 10rem;
+        }
+    
+        #content {
+            font-size: 1rem;
+        }
+    
+    /* Feature-highlight*/
+         .highlights #responsive {
+            height: 100px;
+            width: 100px;
+            font-size: 12px;
+                }
+        .highlights #interactive {
+            height: 100px;
+            width: 100px;
+            font-size: 12px;
+                }
+        .highlights #lightweight {
+            height: 100px;
+            width: 100px;
+            font-size: 12px;
+                }
+        .highlights #fun {
+            height: 100px;
+            width: 100px;
+            font-size: 12px;
+                }
+        .highlights h6 {
+            font-size: 1rem;
+            }
+        hr{
+            display: none;
+        }        
+}
+@media screen and (max-width:767px){
+    /* header -part*/
+        header {
+            display: block;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        header h1 {
+            font-size: 24px;
+            color: yellow;
+            text-shadow: 2px 2px 1px yellowgreen;
+        }
+    
+        header h5 {
+            font-size: 15px;
+            color: white;
+            text-shadow: 1px 1px 0.5px silver;
+        }
+    
+        header button {
+            font-size: 12px;
+            background-color: rgb(8, 173, 8);
+            padding: 5px;
+            border-radius: 10px;
+        }
+    
+        /*main*/
+        main {
+            margin: 10px;
+            padding: 10px;
+            background-color: green;
+            border-radius: 12px;
+            color: white;
+        }
+    
+        /*About section*/
+        #About {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+    
+        #user {
+            font-size: 10px;
+        }
+    
+        #content {
+            font-size: 10px;
+            line-height: 1.5;
+        }
+    
+        #content h4 {
+            font-size: 16px;
+            font-weight: bold;
+            text-shadow: 2px 2px 1px yellow;
+            color: rgb(12, 168, 12)
+        }
+    
+        /* Feature-highlight*/
+        #Feature-highlight {
+            margin-top: 5%;
+            background-color: gold;
+            padding: 15px;
+            border-radius: 12px;
+        }
+    
+        #Feature-highlight h4 {
+            font-size: 16px;
+            font-weight: bold;
+            text-shadow: 2px 2px 1px gray;
+            color: green;
+        }
+    
+        .highlights {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .highlights #responsive {
+            height: 120px;
+            width: 120px;
+            background-color: green;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    
+        .highlights #interactive {
+            height: 120px;
+            width: 120px;
+            background-color: green;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    
+        .highlights #lightweight {
+            height: 120px;
+            width: 120px;
+            background-color: green;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    
+        .highlights #fun {
+            height: 120px;
+            width: 120px;
+            background-color: green;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    
+        .highlights h6 {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: black;
+            text-shadow: 2px 2px 1px gray;
+        }
+    
+        /*ROCK PAPER SCISSORS SECTION*/
+        #R-P-S {
+            margin-top: 5%;
+            padding: 20px;
+            background-color: #111;
+            border-radius: 12px;
+        }
+    
+        #R-P-S h3 {
+            font-size: 2rem;
+            text-align: center;
+            color: yellow;
+            text-shadow: 2px 2px 1px green;
+        }
+    
+        #R-P-S #heading {
+            color: green;
+            text-shadow: 2px 2px 1px yellow;
+        }
+    
+        #R-P-S p {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: bold;
+            color: green;
+        }
+    
+        #R-P-S .moves {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        #R-P-S button {
+            height: 80px;
+            width: 80px;
+            padding: 15px;
+            font-size: 40px;
+            margin-left: 20px;
+            border-radius: 12px;
+        }
+    
+        #R-P-S button:nth-child(1) {
+            background-color: red;
+        }
+    
+        #R-P-S button:nth-child(2) {
+            background-color: green;
+        }
+    
+        #R-P-S button:nth-child(3) {
+            background-color: blue;
+        }
+    
+        #R-P-S button:hover {
+            background-color: #eee;
+            cursor: pointer;
+        }
+    
+        #R-P-S #outcome {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            color: yellow;
+            text-align: center;
+            font-weight: bolder;
+        }
+    
+        #user-score {
+            color: yellow;
+        }
+    
+        #computer-score {
+            color: yellow;
+        }
+    
+        /* testimonials */
+        #testimonials {
+            margin-top: 5%;
+            background-color: rgb(230, 222, 222);
+            border-radius: 12px;
+            padding: 30px;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        #profile {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            font-size: 60px;
+            text-align: center;
+        }
+    
+        #profile img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+    
+        #name {
+            font-weight: bold;
+            text-align: right;
+        }
+    
+        /*Footer section*/
+        hr {
+            width: 90%;
+            background-color: yellow;
+        }
+    
+        footer {
+            padding: 5%;
+            color: yellow;
+            font-weight: bold;
+            font-size: 20px;
+            text-shadow: 2px 2px 1px green;
+        }
+
 }

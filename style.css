@@ -470,6 +470,15 @@ footer{
             text-align: center;
             font-weight: bolder;
         }
+
+        #R-P-S #winner {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            color: yellow;
+            text-align: center;
+            font-weight: bolder;
+        }
     
         #user-score {
             color: yellow;

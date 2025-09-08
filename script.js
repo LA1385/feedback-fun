@@ -106,5 +106,58 @@ document.getElementById("scissors").onclick = function () {
         currentScore+=1;
         userScore.innerHTML=resetScores(currentScore);
     }
-}
+};
+
+
+//Testimonial slider session
+const testimonialContent=[
+    {
+        'name': '-Tobi',
+        'statement': ' "I love how this website combines both usefulness and fun. The testimonial section feel professional and trustworthy,while the rock-paper-scissors game adds a playful touch that keeps me engaged. plus the design looks great on my phone and laptop" ',
+        'imgUrl': 'images/img1.jpg'
+    },
+    { 
+        'name':'-David',
+        'statement':' "The design of this site is so clean and easy to navigate. I really like how the testimonial section looks professional while the game keeps things lively." ',
+        'imgUrl':'images/img2.jpg'
+    },
+    {
+        'name': '-Anita',
+        'statement': ' "I was impressed by how responsive the layout is. Everything adjust smoothly on my phone,and the rock-paper-scissors game works perfectly too!" ',
+        'imgUrl': 'images/img3.jpg'
+    },
+    {
+    'name': '-Favour',
+    'statement': ' "This project is a smart mix of creativity and functionality. it is not just fun to play,but also shows how well web design can engage users." ',
+    'imgUrl': 'images/img4.jpg'
+    }
+];
+
+const bgcolor = ['rgb(230, 222, 222)', 'rgba(160, 192, 223, 1)', 'rgba(245, 232, 183, 1)', 'rgba(169, 228, 169, 1)']
+
+let count1=0;
+
+window.setInterval(function () {
+    //reset count if it exceed array length
+    if (count1>=testimonialContent.length){
+        count1=0;
+    }
+
+    const testimonialSlider = document.getElementById("testimonials");
+    Object.assign(testimonialSlider.style, {
+        appearance: 'none',
+        webkitAppearance: 'none',
+        background: bgcolor[count1 % bgcolor.length]
+    });
+
+    document.getElementById("name").innerHTML = testimonialContent[count1].name;
+    document.getElementById("statements").innerHTML = testimonialContent[count1].statement;
+    document.getElementById("imageUrl").src = testimonialContent[count1].imgUrl;
+
+    console.log(count1,testimonialContent[count1])
+    count1++;
+}, 6000
+);
+
+
 

@@ -80,6 +80,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -89,6 +90,7 @@ main{
     background-color: green;
     border-radius: 10px;
     padding: 10px;
+    margin-bottom: 10px;
 }
 .highlights #interactive {
     height: 120px;
@@ -96,6 +98,7 @@ main{
     background-color: green;
     border-radius: 10px;
     padding: 10px;
+    margin-bottom: 10px;
 }
 .highlights #lightweight {
     height: 120px;
@@ -223,7 +226,7 @@ hr{
 
 footer{
     padding: 5%;
-    color: yellow;
+    color: white;
     font-weight: bold;
     font-size: 20px;
     text-shadow: 2px 2px 1px green;
@@ -285,7 +288,7 @@ footer{
         }
     
         header h5 {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             text-shadow: none;
             line-height: 1.5;
         }
@@ -311,12 +314,12 @@ footer{
         }
     
         #user {
-            font-size: 80px;
+            font-size: 40px;
         }
     
         #content {
             font-size: 12px;
-            line-height: 1.5;
+            line-height: 1.2;
         }
     
         #content h4 {
@@ -324,5 +327,143 @@ footer{
             font-weight: bold;
             text-shadow: 1px 1px 0.5px yellow;
             color: rgb(12, 168, 12)
+        }
+
+    /* Feature-highlight*/
+        #Feature-highlight {
+            padding: 12.5px;
+        }
+    
+        #Feature-highlight h4 {
+            font-size: 1rem;
+            text-shadow: 1px 1px 0.5px gray;
+        }
+    
+    
+        .highlights #responsive {
+            height: 80px;
+            width: 80px;
+            font-size: 10px;
+        }
+    
+        .highlights #interactive {
+            height: 80px;
+            width: 80px;
+            font-size: 10px;
+        }
+    
+        .highlights #lightweight {
+            height: 80px;
+            width: 80px;
+            font-size: 10px;
+        }
+    
+        .highlights #fun {
+            height: 80px;
+            width: 80px;
+            font-size: 10px;
+        }
+    
+        .highlights h6 {
+            margin-top: 0px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            text-shadow: 1px 1px 0.5px gray;
+        }
+        /*Rock-paper-scissors*/
+        #R-P-S h3 {
+            font-size: 1.3rem;
+            text-align: center;
+            text-shadow: 1px 1px 0.5px green;
+            }
+        
+        #R-P-S #heading {
+            text-shadow: 1px 1px 0.5px yellow;
+            }
+        #R-P-S p {
+            font-size: 1rem;
+                }
+        #R-P-S button {
+            height: 40px;
+            width: 40px;
+            padding: 0px;
+            font-size: 20px;
+            margin-left: 10px;
+                }
+        
+                #R-P-S #outcome {
+                    font-size: 0.8rem;
+                }
+        /* testimonials */
+            #testimonials {
+                padding: 20px;
+                        }
+            #profile {
+                    width: 120px;
+                    font-size: 20px;
+                        }
+        /*Footer section*/
+            hr {
+                display: none;
+                }
+            footer {
+                    padding: 20px;
+                    font-size: 12px;
+                    text-shadow: 1px 1px 0.5px green;
+                        }
+}
+@media screen and (max-width:767px) and (min-width:375px){
+    .highlights #responsive {
+            height: 100px;
+            width: 100px;
+            font-size: 12px;
+        }
+    
+        .highlights #interactive {
+            height: 100px;
+            width: 100px;
+            font-size: 12px;
+        }
+    
+        .highlights #lightweight {
+            height: 100px;
+            width: 100px;
+            font-size: 12px;
+        }
+    
+        .highlights #fun {
+            height: 100px;
+            width: 100px;
+            font-size: 12px;
+        }
+}
+
+@media screen and (max-width:767px) and (min-width:425px) {
+    .highlights #responsive {
+        height: 120px;
+        width: 120px;
+        font-size: 14px;
+    }
+
+    .highlights #interactive {
+        height: 120px;
+        width: 120px;
+        font-size: 14px;
+    }
+
+    .highlights #lightweight {
+        height: 120px;
+        width: 120px;
+        font-size: 14px;
+    }
+
+    .highlights #fun {
+        height: 120px;
+        width: 120px;
+        font-size: 14px;
+    }
+    .highlights h6 {
+            font-size: 16px;
+            text-shadow: 1px 1px 0.5px gray;
         }
 }

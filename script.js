@@ -20,7 +20,7 @@ function resetScores(score) {
             document.getElementById("user-score").innerHTML = 0;
             document.getElementById("computer-score").innerHTML = 0;
             document.getElementById("winner").innerHTML = "";
-        }, 3000);
+        }, 5000);
         return "Winner,Congratulation <span>&#127881;&#129395;</span>"
     }
     return score
@@ -158,6 +158,3 @@ window.setInterval(function () {
     count1++;
 }, 6000
 );
-
-
-
